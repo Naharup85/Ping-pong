@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border: 3px solid #ddd;
+}
+
+#ball {
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, #ffeb3b, #ffc107);
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#ball:active {
+    transform: scale(1.1);
+}
+
+#rod1, #rod2 {
+    width: 220px;
+    height: 25px;
+    position: absolute;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 18px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#rod1 {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    top: 10px;
+}
+
+#rod2 {
+    background: linear-gradient(135deg, #ff5722, #d32f2f);
+    bottom: 10px;
+}
+
+#rod1:hover, #rod2:hover {
+    transform: scale(1.05);
+}
